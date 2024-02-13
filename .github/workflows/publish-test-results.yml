@@ -1,0 +1,17 @@
+name: Publish test results to Alva
+on:
+  push:
+    branches:
+      - '*'
+      - '*/*'
+      - '!master'
+      - '!main'
+
+jobs:
+  publish-test-results:
+    name: Publish test results to Alva
+    uses: DevSkillsHQ/publish-test-results-workflow/.github/workflows/publish-test-results.yml@main
+    permissions:
+      contents: write
+    secrets:
+      AUTO_SCORE_TOKEN: ${{ secrets.AUTO_SCORE_TOKEN }}

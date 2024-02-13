@@ -1,0 +1,12 @@
+{
+  "name": "transaction-management-frontend-level-2",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo build your frontend app here",
+    "start": "echo start your frontend app here",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.1"
+  }
+}
