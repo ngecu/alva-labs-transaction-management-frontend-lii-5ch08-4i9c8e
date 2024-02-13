@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "echo build your frontend app here",
-    "start": "echo start your frontend app here",
+    "start": "npm run start --prefix mysubmission",
     "test": "cypress run"
   },
   "devDependencies": {
